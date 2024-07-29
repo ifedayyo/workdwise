@@ -5,7 +5,8 @@ export default function Homepage() {
   return (
     <div>
       <PageNav />
-      <h1>Home</h1>
+      <h1>Worldwise</h1>
+      <Link to="/app">Go to the app</Link>
     </div>
   );
 }
