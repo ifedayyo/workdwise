@@ -4,7 +4,7 @@ export default function Product() {
   return (
     <div>
       <PageNav />
-      Product
+      <h1>product</h1>
     </div>
   );
 }
