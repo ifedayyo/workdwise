@@ -3,6 +3,7 @@ import Product from "./pages/Product";
 import Pricing from "./pages/Pricing";
 import Homepage from "./pages/Homepage";
 import PageNotFound from "./pages/PageNotFound";
+import Login from "./pages/Login";
 
 export default function App() {
   //define our routes in jsx
@@ -12,6 +13,7 @@ export default function App() {
         <Route path="product" element={<Product />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="/" element={<Homepage />} />
+        <Route path="login" element={<Login />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
