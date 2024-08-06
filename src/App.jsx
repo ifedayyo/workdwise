@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 
 const BASE_URL = "https://localhost:8000";
 export default function App() {
-  const [cities, setCities] = useState({});
+  const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(function () {
