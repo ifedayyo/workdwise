@@ -1,9 +1,9 @@
 import CityItem from "./CityItem";
-import styles from "./CountriesList.module.css";
+import styles from "./CountryList.module.css";
 import Message from "./Message";
 import Spinner from "./Spinner";
 
-export default function CountriesList({ cities, isLoading }) {
+export default function CountryList({ cities, isLoading }) {
   if (isLoading) return <Spinner />;
 
   if (!cities.length)
@@ -12,7 +12,7 @@ export default function CountriesList({ cities, isLoading }) {
     );
 
   return (
-    <ul className={styles.countriesList}>
+    <ul className={styles.CountryList}>
       {cities.map((city) => (
         <CityItem city={city} key={city.id} />
       ))}
