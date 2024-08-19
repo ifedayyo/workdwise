@@ -10,7 +10,7 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 function City() {
-  const x = useParams();
+  const { id } = useParams();
 
   // TEMP DATA
   const currentCity = {
